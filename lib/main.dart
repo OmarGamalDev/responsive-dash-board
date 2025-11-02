@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/home_view.dart';
 
 void main() => runApp(
   DevicePreview(enabled: true, builder: (context) => MyApp()),
@@ -14,14 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Responsive Dashboard'),
-        ),
-        body: const Center(
-          child: Text('Hello, Responsive Dashboard!'),
-        ),
-      ),
+      home:const HomeView(),
     );
   }
 }
