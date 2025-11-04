@@ -8,9 +8,9 @@ class DashboardDesktopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(flex: 1, child: const CustomDrawer()),
-        Expanded(flex: 3, child: Container(color: Colors.red)),
-        Expanded(flex: 2, child: Container(color: Colors.blue)),
+        Expanded(flex: 2, child: const CustomDrawer()),
+        Expanded(flex: 4, child: Container(color: Colors.red)),
+        Expanded(flex: 3, child: Container(color: Colors.blue)),
       ],
     );
   }

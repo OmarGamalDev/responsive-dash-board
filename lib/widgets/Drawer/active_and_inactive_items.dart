@@ -36,9 +36,9 @@ class ActiveDrawerItems extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(drawerItemModel.title, style: AppStyles.styleBold16),
         ),
-        trailing: Container(
-          width: 3.27,
-          decoration: BoxDecoration(color: const Color(0xff4EB7F2)),
+        trailing: ColoredBox(
+          color: const Color(0xff4EB7F2),
+          child: const SizedBox(width: 3.27, height: 30),
         ),
       ),
     );
