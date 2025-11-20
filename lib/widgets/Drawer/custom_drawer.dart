@@ -33,7 +33,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
             hasScrollBody: false,
             child: Column(
               children: [
-                Expanded(child: SizedBox()),
+                Expanded(child: SizedBox(height: 16)),
                 InActiveDrawerItems(
                   drawerItemModel: DrawerItemModel(
                     title: 'Setting system',
